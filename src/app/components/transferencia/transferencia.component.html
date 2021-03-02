@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col12" class="ctaorigen">
+
+      <p> <strong> Hacer Transferencia</strong></p>
+      <hr>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Numero de su cuenta</label>
+        <input type="email" class="form-control"  [(ngModel)]="cuentaOrigen"  placeholder="ej : 1111">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Numero de cuenta a transferir</label>
+        <input type="email" class="form-control"   [(ngModel)]="cuentaDestino"  placeholder="ej : 2222">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Monto a transferir</label>
+        <input type="email" class="form-control"   [(ngModel)]="monto" placeholder="ej : 5000">
+      </div>
+      <p class="text-danger">{{textError}}</p>
+      <div class="form-group">
+
+        <button class="btn btn-danger btn-block" (click)="hacerTransferencia()">Hacer Transferencia</button>
+      </div>
+
+    
+  </div>
+</div>
+
+<div class="alert alert-success" role="alert" [ngStyle]="{'display': expression}">
+  {{message.message}}
+</div>

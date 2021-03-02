@@ -1,0 +1,12 @@
+
+<div class="card text-white bg-primary mb-3"*ngFor="let indicador of lista">
+    <div class="card-header">{{indicador.codigo.toUpperCase()}}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{indicador.nombre}}</h5>
+      <ul>
+        <li>Unidad de medida : {{indicador.unidad_medida}}</li>
+        <li>fecha : {{indicador.fecha}}</li>
+        <li>valor : {{indicador.valor}}</li>
+      </ul>
+    </div>
+</div>
