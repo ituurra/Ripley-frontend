@@ -1,4 +1,4 @@
-# Frontend
+# Proyecto Angular v11
 
 Para poder usar este proyecto ! debe descargar el proyecto que cumple con la parte del Backend
 
